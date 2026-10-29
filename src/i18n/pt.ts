@@ -4,7 +4,7 @@ export const pt: Content = {
   htmlLang: "pt-BR",
   label: "Português",
   meta: {
-    title: "Woksar — IA aplicada para empresas B2B",
+    title: "Woksar: IA aplicada para empresas B2B",
     description:
       "Desenvolvemos agentes e automações de IA sob medida para empresas B2B. Integrados aos seus sistemas, com resultado medido e monitoramento em produção.",
     ogImage: "/og.png",

@@ -4,7 +4,7 @@ export const en: Content = {
   htmlLang: "en",
   label: "English",
   meta: {
-    title: "Woksar — Applied AI for B2B companies",
+    title: "Woksar: Applied AI for B2B companies",
     description:
       "We build tailored AI agents and automations for B2B companies. Connected to your systems, with measured results and monitoring in production.",
     ogImage: "/og-en.png",
