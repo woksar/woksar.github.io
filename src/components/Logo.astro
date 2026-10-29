@@ -1,63 +1,33 @@
 ---
-import LogoIcon from '@/components/LogoIcon.astro';
-import { activeLogo, logos, type LogoVersion } from '@/data/logos';
-
 interface Props {
-  version?: LogoVersion;
-  variant?: 'lockup' | 'stacked';
   size?: number;
   class?: string;
 }
 
-const {
-  version = activeLogo,
-  variant = 'lockup',
-  size = 34,
-  class: className,
-} = Astro.props;
-
-const logo = logos[version];
-const icon = variant === 'lockup' ? logo.icon : undefined;
-
-const round = (value: number): string => `${Math.round(value * 100) / 100}px`;
-const wordSize = round(size * 0.42);
-const subSize = round(size * 0.235);
-const gap = round(size * 0.3);
+const { size = 34, class: className } = Astro.props;
+const wordSize = `${Math.round(size * 0.5 * 100) / 100}px`;
+const gap = `${Math.round(size * 0.3 * 100) / 100}px`;
 ---
 
-{
-  icon ? (
-    <span
-      class={`group inline-flex items-center ${className ?? ''}`}
-      style={`gap: ${gap}`}
-    >
-      <LogoIcon size={size} />
-      <span class="flex flex-col justify-center">
-        <span class="sr-only">Raw Code Brothers</span>
-        <span
-          aria-hidden="true"
-          class="font-display font-semibold uppercase leading-none text-foreground"
-          style={`font-size: ${wordSize}; letter-spacing: 0.06em;`}
-        >
-          Raw<span class="text-brand">code</span>
-        </span>
-        <span
-          aria-hidden="true"
-          class="font-mono uppercase leading-none text-brand"
-          style={`font-size: ${subSize}; letter-spacing: 0.6em; margin-top: ${round(size * 0.11)};`}
-        >
-          Brothers
-        </span>
-      </span>
-    </span>
-  ) : (
-    <img
-      src={logo.stacked.src}
-      alt="Raw Code Brothers"
-      width={logo.stacked.width}
-      height={logo.stacked.height}
-      style={`height: ${round(size)}; width: auto;`}
-      class={className}
-    />
-  )
-}
+<span class={`inline-flex items-center ${className ?? ''}`} style={`gap: ${gap}`}>
+  <svg
+    viewBox="80 80 570 400"
+    style={`height: ${size}px; width: auto;`}
+    aria-hidden="true"
+  >
+    <polygon points="90,160 180,110 250,255 160,305" fill="#f1ebdd"></polygon>
+    <polygon
+      points="275,210 475,90 460,255 510,345 375,465 275,290"
+      fill="#e3b341"></polygon>
+    <polygon points="485,205 640,95 605,245 525,320 470,250" fill="#87956a"
+    ></polygon>
+  </svg>
+  <span class="sr-only">Woksar</span>
+  <span
+    aria-hidden="true"
+    class="font-display font-extrabold uppercase leading-none tracking-[0.04em] text-foreground"
+    style={`font-size: ${wordSize}`}
+  >
+    Woksar
+  </span>
+</span>

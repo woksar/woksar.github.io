@@ -66,7 +66,7 @@ const [servicesId, processId, projectsId, teamId] = ids;
       <div class="mt-12 flex flex-wrap items-center justify-center gap-8">
         <a
           href={`mailto:${site.email}`}
-          class="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-xs font-bold tracking-widest text-[#2e3a06] transition-[opacity,box-shadow] duration-150 ease-out-quart hover:opacity-95 hover:shadow-[0_0_28px_-6px_rgba(255,255,255,0.45)]"
+          class="inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-xs font-bold tracking-widest text-brand-foreground transition-[opacity,box-shadow] duration-150 ease-out-quart hover:opacity-95 hover:shadow-[0_0_28px_-6px_rgba(227,179,65,0.45)]"
         >
           <ScrambleText text={t.ui.contact} />
           <svg
@@ -94,7 +94,7 @@ const [servicesId, processId, projectsId, teamId] = ids;
     </div>
   </section>
 
-  <CodeDivider call='const services = await brothers.load("services");' />
+  <CodeDivider call='const services = await woksar.load("services");' />
 
   <section id={servicesId} class="mx-auto max-w-6xl scroll-mt-24 px-6">
     <div data-reveal>
@@ -112,7 +112,7 @@ const [servicesId, processId, projectsId, teamId] = ids;
     </div>
   </section>
 
-  <CodeDivider call='const process = await brothers.load("process");' />
+  <CodeDivider call='const process = await woksar.load("process");' />
 
   <section id={processId} class="mx-auto max-w-6xl scroll-mt-24 px-6">
     <div class="phase-scroll" data-stepper style={`--slides: ${t.phases.length}`}>
@@ -138,7 +138,7 @@ const [servicesId, processId, projectsId, teamId] = ids;
     </div>
   </section>
 
-  <CodeDivider call='const projects = await brothers.load("projects");' />
+  <CodeDivider call='const projects = await woksar.load("projects");' />
 
   <section id={projectsId} class="mx-auto max-w-6xl scroll-mt-24 px-6">
     <div data-reveal>
@@ -160,7 +160,7 @@ const [servicesId, processId, projectsId, teamId] = ids;
     </div>
   </section>
 
-  <CodeDivider call='const team = await brothers.load("team");' />
+  <CodeDivider call='const team = await woksar.load("team");' />
 
   <section id={teamId} class="mx-auto max-w-6xl scroll-mt-24 px-6">
     <div data-reveal>

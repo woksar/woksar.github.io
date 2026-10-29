@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Raw Code Brothers">
-  <rect width="512" height="512" rx="112" fill="#111111"/>
-  <g fill="none" stroke="#dcf27e" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M158 120c-34 0-38 14-38 46v42c0 30-12 48-32 48 20 0 32 18 32 48v42c0 32 4 46 38 46"/>
-    <path d="M354 120c34 0 38 14 38 46v42c0 30 12 48 32 48-20 0-32 18-32 48v42c0 32-4 46-38 46"/>
-  </g>
-  <g fill="#ffffff">
-    <circle cx="199" cy="256" r="44"/>
-    <circle cx="313" cy="256" r="44"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Woksar">
+  <rect width="512" height="512" rx="112" fill="#11130f"/>
+  <g transform="translate(40 60) scale(0.72)">
+    <polygon points="90,160 180,110 250,255 160,305" fill="#f1ebdd"/>
+    <polygon points="275,210 475,90 460,255 510,345 375,465 275,290" fill="#e3b341"/>
+    <polygon points="485,205 640,95 605,245 525,320 470,250" fill="#87956a"/>
   </g>
 </svg>

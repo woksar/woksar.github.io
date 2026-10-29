@@ -100,13 +100,4 @@ export type Content = {
     readonly contact: string;
     readonly rights: string;
   };
-  readonly logosPage: {
-    readonly title: string;
-    readonly description: string;
-    readonly eyebrow: string;
-    readonly heading: string;
-    readonly lead: string;
-    readonly inUse: string;
-    readonly sizes: readonly string[];
-  };
 };

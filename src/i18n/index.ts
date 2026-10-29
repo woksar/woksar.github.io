@@ -22,11 +22,10 @@ export type {
 const content: Readonly<Record<Locale, Content>> = { pt, en };
 
 export const site = {
-  name: "Raw Code Brothers",
-  tagline:
-    "Building clean, efficient, and robust software. No noise, just raw code.",
+  name: "Woksar",
+  tagline: "Software engineering and applied AI for real business problems.",
   email: "simao.msjr@gmail.com",
-  github: "https://github.com/rawcodebrothers",
+  github: "https://github.com/woksar",
 } as const;
 
 export const isLocale = (value: string): value is Locale =>

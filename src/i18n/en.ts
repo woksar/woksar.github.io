@@ -4,7 +4,7 @@ export const en: Content = {
   htmlLang: "en",
   label: "English",
   meta: {
-    title: "Raw Code Brothers — Applied AI for B2B companies",
+    title: "Woksar — Applied AI for B2B companies",
     description:
       "We build tailored AI agents and automations for B2B companies. Connected to your systems, with measured results and monitoring in production.",
     ogImage: "/og-en.png",
@@ -167,6 +167,22 @@ export const en: Content = {
       live: false,
       kind: "own",
     },
+    {
+      name: "Vetzoo",
+      summary:
+        "Veterinary care at home in the Alto Tietê region. The owner describes the case, goes through a triage with an emergency lock, and gets a vet with a verified CRMV license, with the price agreed before the visit. No commission: the owner pays the vet directly.",
+      tags: [
+        "React Native",
+        "Elixir",
+        "Phoenix",
+        "PostgreSQL",
+        "PostGIS",
+        "Astro",
+      ],
+      href: "https://vetzoo.app",
+      live: false,
+      kind: "own",
+    },
   ],
   team: [
     {
@@ -211,14 +227,5 @@ export const en: Content = {
     site: "Site",
     contact: "Contact",
     rights: "All rights reserved.",
-  },
-  logosPage: {
-    title: "Raw Code Brothers — Logo versions",
-    description: "A comparison of the logo versions.",
-    eyebrow: "Brand",
-    heading: "Logo versions",
-    lead: "Every version is cropped to its artwork, without the empty margin of the original square.",
-    inUse: "in use",
-    sizes: ["Bar, 34px", "Tall bar, 48px", "Footer, 64px", "Hero, 112px"],
   },
 };
